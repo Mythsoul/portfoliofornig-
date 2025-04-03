@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated UI Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-circle"></div>
+            <div class="loader-text">Loading</div>
+        </div>
+    </div>
+    
+    <div class="page-transition"></div>
+    
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-text">KM</span>
+                <div class="logo-dot"></div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="menu-toggle">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="animate-text">
+                            <span class="text-line">UI Designer &</span>
+                            <span class="text-line">Motion Artist</span>
+                        </h1>
+                        <p class="animate-text-delay">Hello! I'm Krishna Maharjan, a UI/UX Designer specialized in creating engaging digital experiences with smooth animations and thoughtful interactions.</p>
+                        <div class="hero-buttons animate-text-delay">
+                            <a href="work.html" class="primary-button">View My Work</a>
+                            <a href="contact.html" class="secondary-button">Get In Touch</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="image-wrapper">
+                            <div class="circle-decoration"></div>
+                            <div class="square-decoration"></div>
+                            <div class="triangle-decoration"></div>
+                            <div class="profile-image"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <div class="arrow">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="services">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">My Services</h2>
+                    <p class="section-subtitle">Specialized skills to transform your digital presence</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card" data-aos="fade-up">
+                        <div class="service-icon ui-icon"></div>
+                        <h3>UI Design</h3>
+                        <p>Creating visually appealing interfaces that engage users and reflect your brand identity.</p>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-icon ux-icon"></div>
+                        <h3>UX Design</h3>
+                        <p>Designing intuitive user experiences with thoughtful flows and interactions.</p>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-icon motion-icon"></div>
+                        <h3>Motion Design</h3>
+                        <p>Adding life to interfaces with subtle animations and engaging transitions.</p>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-icon prototype-icon"></div>
+                        <h3>Prototyping</h3>
+                        <p>Building interactive prototypes to validate design concepts before development.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="recent-work">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Recent Projects</h2>
+                    <p class="section-subtitle">A selection of my latest work</p>
+                </div>
+                
+                <div class="work-slider">
+                    <div class="slider-track">
+                        <div class="work-card" data-aos="fade-up">
+                            <div class="work-image"></div>
+                            <div class="work-content">
+                                <h3>Finance App Redesign</h3>
+                                <p>UI/UX, Interaction Design</p>
+                                <a href="work.html" class="work-link">View Project</a>
+                            </div>
+                        </div>
+                        
+                        <div class="work-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="work-image"></div>
+                            <div class="work-content">
+                                <h3>Wellness Platform</h3>
+                                <p>UI Design, Motion Design</p>
+                                <a href="work.html" class="work-link">View Project</a>
+                            </div>
+                        </div>
+                        
+                        <div class="work-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="work-image"></div>
+                            <div class="work-content">
+                                <h3>E-commerce Experience</h3>
+                                <p>UX Strategy, Prototyping</p>
+                                <a href="work.html" class="work-link">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slider-controls">
+                        <button class="slider-prev">←</button>
+                        <div class="slider-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <button class="slider-next">→</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="testimonials">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Client Testimonials</h2>
+                    <p class="section-subtitle">What people say about working with me</p>
+                </div>
+                
+                <div class="testimonial-container" data-aos="fade-up">
+                    <div class="testimonial-quote">
+                        <p>"Krishna brought our app to life with his amazing design skills and attention to detail. The animations he created made our product stand out from the competition."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image"></div>
+                        <div class="author-info">
+                            <h4>Rajesh Shrestha</h4>
+                            <p>CEO, TechNepal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact-cta">
+            <div class="section-container">
+                <div class="cta-content" data-aos="fade-up">
+                    <h2>Let's Create Something Amazing Together</h2>
+                    <p>Have a project in mind? I'm available for freelance work and collaborations.</p>
+                    <a href="contact.html" class="primary-button">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <span class="logo-text">KM</span>
+                        <div class="logo-dot"></div>
+                    </div>
+                    <p>Creating engaging digital experiences through thoughtful design and motion.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="work.html">Work</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#">Dribbble</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">Behance</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li>krishna@example.com</li>
+                            <li>+977 9801234567</li>
+                            <li>Kathmandu, Nepal</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Krishna Maharjan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Simple page loader
+        window.addEventListener('load', function() {
+            document.querySelector('.loader').classList.add('loaded');
+        });
+        
+        // Menu toggle for mobile
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('nav').classList.toggle('active');
+        });
+        
+        // Simple AOS (Animation On Scroll) simulation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('aos-animate');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        
+        document.querySelectorAll('[data-aos]').forEach(element => {
+            element.classList.add('aos-init');
+            observer.observe(element);
+        });
+    </script>
+</body>
+</html>

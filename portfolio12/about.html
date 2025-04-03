@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Dark Mode Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-section {
+            padding: 80px 0;
+        }
+        
+        .about-header {
+            margin-bottom: 60px;
+            text-align: center;
+        }
+        
+        .experience-timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 60px auto;
+        }
+        
+        .timeline-line {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 2px;
+            background-color: var(--border-color);
+            transform: translateX(-50%);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 60px;
+            display: flex;
+        }
+        
+        .timeline-item:nth-child(odd) {
+            justify-content: flex-start;
+            padding-right: calc(50% + 30px);
+        }
+        
+        .timeline-item:nth-child(even) {
+            justify-content: flex-end;
+            padding-left: calc(50% + 30px);
+        }
+        
+        .timeline-dot {
+            position: absolute;
+            top: 15px;
+            left: 50%;
+            width: 20px;
+            height: 20px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+        
+        .timeline-content {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+            max-width: 100%;
+        }
+        
+        .timeline-content:hover {
+            transform: translateY(-5px);
+        }
+        
+        .timeline-year {
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .timeline-title {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+        
+        .timeline-company {
+            color: var(--secondary-text);
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        
+        .timeline-description {
+            color: var(--secondary-text);
+        }
+        
+        .skills-section {
+            padding: 60px 0;
+            background-color: var(--secondary-bg);
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        
+        .skill-tag {
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-weight: 500;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+        }
+        
+        .skill-tag:hover {
+            background-color: var(--accent-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .education-section {
+            padding: 80px 0;
+        }
+        
+        .education-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .education-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+        }
+        
+        .education-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .education-year {
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .education-degree {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+        
+        .education-school {
+            color: var(--secondary-text);
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        
+        .education-description {
+            color: var(--secondary-text);
+        }
+        
+        @media (max-width: 768px) {
+            .timeline-line {
+                left: 20px;
+            }
+            
+            .timeline-item:nth-child(odd),
+            .timeline-item:nth-child(even) {
+                justify-content: flex-start;
+                padding-left: 60px;
+                padding-right: 0;
+            }
+            
+            .timeline-dot {
+                left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="theme-toggle">
+        <span class="sun">☀️</span>
+        <span class="moon">🌙</span>
+        <div class="toggle-ball"></div>
+    </div>
+    
+    <header>
+        <div class="container">
+            <div class="logo">NK</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="about-section">
+            <div class="container">
+                <div class="about-header">
+                    <h1 class="section-title">About Me</h1>
+                    <p style="text-align: center; max-width: 700px; margin: 0 auto; color: var(--secondary-text);">
+                        I'm Nabin, a full-stack developer from Kathmandu with over 5 years of experience creating web applications. I'm passionate about building efficient, scalable, and user-friendly digital experiences.
+                    </p>
+                </div>
+                
+                <div class="experience-timeline">
+                    <div class="timeline-line"></div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">2023 - Present</div>
+                            <h3 class="timeline-title">Senior Full-Stack Developer</h3>
+                            <div class="timeline-company">TechNova Solutions, Kathmandu</div>
+                            <p class="timeline-description">Leading development of enterprise-level web applications using React, Node.js, and MongoDB. Managing a team of 5 developers and implementing CI/CD pipelines.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">2020 - 2023</div>
+                            <h3 class="timeline-title">Full-Stack Developer</h3>
+                            <div class="timeline-company">Digital Innovators, Kathmandu</div>
+                            <p class="timeline-description">Developed and maintained web applications for clients in the healthcare and finance sectors. Worked with React, Vue.js, Django, and PostgreSQL.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">2018 - 2020</div>
+                            <h3 class="timeline-title">Frontend Developer</h3>
+                            <div class="timeline-company">WebCraft Nepal</div>
+                            <p class="timeline-description">Created responsive and accessible user interfaces for various web applications. Focused on performance optimization and cross-browser compatibility.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="skills-section">
+            <div class="container">
+                <h2 class="section-title">My Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-tag">JavaScript</div>
+                    <div class="skill-tag">TypeScript</div>
+                    <div class="skill-tag">React.js</div>
+                    <div class="skill-tag">Vue.js</div>
+                    <div class="skill-tag">Node.js</div>
+                    <div class="skill-tag">Express</div>
+                    <div class="skill-tag">Django</div>
+                    <div class="skill-tag">PHP</div>
+                    <div class="skill-tag">MongoDB</div>
+                    <div class="skill-tag">PostgreSQL</div>
+                    <div class="skill-tag">MySQL</div>
+                    <div class="skill-tag">GraphQL</div>
+                    <div class="skill-tag">REST API</div>
+                    <div class="skill-tag">AWS</div>
+                    <div class="skill-tag">Docker</div>
+                    <div class="skill-tag">Git</div>
+                    <div class="skill-tag">CI/CD</div>
+                    <div class="skill-tag">Jest</div>
+                    <div class="skill-tag">Cypress</div>
+                    <div class="skill-tag">TailwindCSS</div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="education-section">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="education-cards">
+                    <div class="education-card">
+                        <div class="education-year">2014 - 2018</div>
+                        <h3 class="education-degree">Bachelor of Computer Science</h3>
+                        <div class="education-school">Tribhuvan University, Kathmandu</div>
+                        <p class="education-description">Focused on software engineering, database systems, and web development. Graduated with honors.</p>
+                    </div>
+                    
+                    <div class="education-card">
+                        <div class="education-year">2020</div>
+                        <h3 class="education-degree">Advanced Web Development Certification</h3>
+                        <div class="education-school">IT Training Nepal</div>
+                        <p class="education-description">Specialized training in modern web frameworks and cloud deployment strategies.</p>
+                    </div>
+                    
+                    <div class="education-card">
+                        <div class="education-year">2022</div>
+                        <h3 class="education-degree">AWS Certified Developer</h3>
+                        <div class="education-school">Amazon Web Services</div>
+                        <p class="education-description">Professional certification for developing, deploying, and debugging cloud-based applications using AWS.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">NK</div>
+                    <p>Building digital experiences with precision and passion.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">GH</a>
+                        <a href="#" class="social-icon">LI</a>
+                        <a href="#" class="social-icon">TW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nabin Khatri. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Simple theme toggle functionality
+        const themeToggle = document.querySelector('.theme-toggle');
+        const body = document.body;
+        
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            themeToggle.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

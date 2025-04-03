@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <span class="sun">☀️</span>
+        <span class="moon">🌙</span>
+        <div class="toggle-ball"></div>
+    </div>
+    
+    <header>
+        <div class="container">
+            <div class="logo">NK</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Nabin Khatri</h1>
+                        <h2>Full-Stack Developer</h2>
+                        <p>I build exceptional digital experiences with clean, efficient code. Specializing in modern web technologies and frameworks.</p>
+                        <div class="hero-buttons">
+                            <a href="projects.html" class="primary-btn">View Projects</a>
+                            <a href="contact.html" class="secondary-btn">Contact Me</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="tech-stack">
+            <div class="container">
+                <h2 class="section-title">Tech Stack</h2>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <div class="tech-icon"></div>
+                        <h3>Front-End</h3>
+                        <ul>
+                            <li>React.js</li>
+                            <li>Vue.js</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>TypeScript</li>
+                            <li>CSS3 / Sass</li>
+                        </ul>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon"></div>
+                        <h3>Back-End</h3>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>Django</li>
+                            <li>PHP</li>
+                            <li>GraphQL</li>
+                        </ul>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-icon"></div>
+                        <h3>Database</h3>
+                        <ul>
+                            <li>MongoDB</li>
+                            <li>PostgreSQL</li>
+                            <li>MySQL</li>
+                            <li>Firebase</li>
+                            <li>Redis</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="featured-projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="project-cards">
+                    <div class="project-card">
+                        <div class="project-image"></div>
+                        <div class="project-content">
+                            <h3>E-commerce Platform</h3>
+                            <p>A full-featured online store with payment integration, user authentication, and admin dashboard.</p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image"></div>
+                        <div class="project-content">
+                            <h3>Healthcare Management System</h3>
+                            <p>A comprehensive system for managing patient records, appointments, and medical staff schedules.</p>
+                            <div class="project-tags">
+                                <span>Vue.js</span>
+                                <span>Django</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-all">
+                    <a href="projects.html" class="primary-btn">View All Projects</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">NK</div>
+                    <p>Building digital experiences with precision and passion.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">GH</a>
+                        <a href="#" class="social-icon">LI</a>
+                        <a href="#" class="social-icon">TW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nabin Khatri. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Simple theme toggle functionality
+        const themeToggle = document.querySelector('.theme-toggle');
+        const body = document.body;
+        
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            themeToggle.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

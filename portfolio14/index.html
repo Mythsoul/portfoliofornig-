@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Photography Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <header>
+        <div class="logo">Arjun Gurung</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Capturing Moments<br>in Nepal</h1>
+                <p>Photography that tells stories of landscapes, culture, and people.</p>
+                <a href="gallery.html" class="btn">View Gallery</a>
+            </div>
+            <div class="hero-image">
+                <img src="#" alt="Mountain landscape">
+                <div class="image-overlay"></div>
+            </div>
+        </section>
+        
+        <section class="categories">
+            <h2>Photography Categories</h2>
+            <div class="category-grid">
+                <div class="category-item">
+                    <div class="category-image landscape"></div>
+                    <h3>Landscapes</h3>
+                    <p>Capturing the majestic Himalayas and natural beauty of Nepal</p>
+                </div>
+                <div class="category-item">
+                    <div class="category-image portrait"></div>
+                    <h3>Portraits</h3>
+                    <p>Authentic faces and expressions of Nepali people</p>
+                </div>
+                <div class="category-item">
+                    <div class="category-image street"></div>
+                    <h3>Street</h3>
+                    <p>Everyday moments in the vibrant streets of Kathmandu</p>
+                </div>
+                <div class="category-item">
+                    <div class="category-image culture"></div>
+                    <h3>Culture</h3>
+                    <p>Traditions, festivals, and heritage sites of Nepal</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="featured">
+            <h2>Featured Work</h2>
+            <div class="featured-grid">
+                <div class="featured-item large">
+                    <div class="featured-image"></div>
+                    <div class="featured-info">
+                        <h3>Annapurna at Dawn</h3>
+                        <p>Landscape Photography</p>
+                    </div>
+                </div>
+                <div class="featured-item">
+                    <div class="featured-image"></div>
+                    <div class="featured-info">
+                        <h3>Kathmandu Valley</h3>
+                        <p>Cityscape</p>
+                    </div>
+                </div>
+                <div class="featured-item">
+                    <div class="featured-image"></div>
+                    <div class="featured-info">
+                        <h3>Pashupatinath Temple</h3>
+                        <p>Cultural Heritage</p>
+                    </div>
+                </div>
+                <div class="featured-item">
+                    <div class="featured-image"></div>
+                    <div class="featured-info">
+                        <h3>Faces of Nepal</h3>
+                        <p>Portrait Series</p>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="gallery.html" class="btn-outline">View All Work</a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="logo">AG</div>
+                <p>Creating visual stories through<br>the lens of photography.</p>
+            </div>
+            <div class="footer-right">
+                <div class="footer-links">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">500px</a></li>
+                        <li><a href="#">Unsplash</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Arjun Gurung Photography. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Custom cursor
+        const cursor = document.querySelector('.cursor');
+        const follower = document.querySelector('.cursor-follower');
+        
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+            
+            follower.style.left = e.clientX + 'px';
+            follower.style.top = e.clientY + 'px';
+        });
+        
+        // Links hover effect
+        const links = document.querySelectorAll('a');
+        
+        links.forEach(link => {
+            link.addEventListener('mouseenter', () => {
+                cursor.classList.add('cursor-active');
+                follower.classList.add('cursor-active');
+            });
+            
+            link.addEventListener('mouseleave', () => {
+                cursor.classList.remove('cursor-active');
+                follower.classList.remove('cursor-active');
+            });
+        });
+        
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+        
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
