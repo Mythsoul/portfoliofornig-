@@ -149,7 +149,26 @@ main {
     border: 10px solid #fff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-
+.intro-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.intro-image img:hover {
+    transform: scale(1.05);
+}
+.intro-image img:active {
+    transform: scale(1);
+}
+.intro-image img:focus {
+    outline: none;
+}
+.intro-image img:focus-visible {
+    outline: 2px solid #a1957b;
+}
+.intro-image img:focus-visible:active {
+    outline: 2px solid #8a7f68;
+}
 .btn {
     display: inline-block;
     background-color: #a1957b;
