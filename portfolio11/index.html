@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watercolor Portfolio</title>
+    <title>Shiv Sagar - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,10 +12,10 @@
         <div class="watercolor-splash splash2"></div>
         <div class="watercolor-splash splash3"></div>
     </div>
-    
+
     <header class="glass-effect">
         <div class="header-content">
-            <div class="logo">Sushil</div>
+            <div class="logo">Shiv</div>
             <nav>
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
@@ -27,49 +26,52 @@
             </nav>
         </div>
     </header>
-    
+
     <main>
         <section class="hero glass-effect">
-            <div class="hero-content">
-                <h1>Sushil Poudel</h1>
-                <p class="subtitle">Illustrator & Web Designer</p>
-                <p class="bio">Creating beautiful digital watercolor illustrations and websites with an artistic touch.</p>
-                <div class="button-container">
-                    <a href="projects.html" class="primary-button">View Portfolio</a>
-                    <a href="contact.html" class="secondary-button">Contact Me</a>
+            <div class="hero-content" style="display: flex; flex-direction: row; align-items: center; gap: 40px; text-align: left;">
+                <div class="profile-image" style="flex-shrink: 0;">
+                    <img src="./shiv.png" alt="Shiv Sagar" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 4px solid var(--primary-color);">
+                </div>
+                <div class="intro-text">
+                    <h1>Shiv Sagar Chaudary</h1>
+                    <p class="subtitle">Web Developer</p>
+                    <p class="bio">HTML and CSS Developer | National School of Sciences Student</p>
+                    <div class="button-container" style="justify-content: flex-start; margin-top: 20px;">
+                        <a href="contact.html" class="primary-button">Contact Me</a>
+                        <a href="projects.html" class="secondary-button">View Projects</a>
+                    </div>
                 </div>
             </div>
         </section>
-        
-        <section class="recent-work">
-            <h2>Recent Creations</h2>
+
+        <section id="projects" class="recent-work">
+            <h2>My Projects</h2>
             <div class="work-grid">
                 <div class="work-item glass-effect">
-                    <div class="work-image image1"></div>
-                    <h3>Himalayan Landscapes</h3>
-                    <p>Digital watercolor series</p>
+                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=500" 
+                         alt="Portfolio Website" 
+                         class="work-image">
+                    <h3>Personal Blog</h3>
+                    <p>HTML & CSS Website</p>
                 </div>
                 <div class="work-item glass-effect">
-                    <div class="work-image image2"></div>
-                    <h3>Nepali Festival Series</h3>
-                    <p>Cultural illustrations</p>
-                </div>
-                <div class="work-item glass-effect">
-                    <div class="work-image image3"></div>
-                    <h3>Local Brand Website</h3>
-                    <p>Web design & development</p>
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=500" 
+                         alt="Restaurant Website" 
+                         class="work-image">
+                    <h3>Restaurant Website</h3>
+                    <p>Static Website</p>
                 </div>
             </div>
         </section>
     </main>
-    
+
     <footer class="glass-effect">
         <div class="footer-content">
-            <p>&copy; 2025 Sushil Poudel</p>
+            <p>&copy; 2025 Shiv Sagar Chaudary</p>
             <div class="social-links">
-                <a href="#" class="social-link">Instagram</a>
-                <a href="#" class="social-link">Behance</a>
-                <a href="#" class="social-link">LinkedIn</a>
+                <a href="mailto:shivsagarchaudary926@gmail.com" class="social-link">Email</a>
+                <a href="https://www.instagram.com/cool_dude0060/" target="_blank" class="social-link">Insta</a>
             </div>
         </div>
     </footer>
