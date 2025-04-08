@@ -1,22 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark Mode Portfolio</title>
+    <title>Prajan Parajuli Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="theme-toggle">
-        <span class="sun">☀️</span>
-        <span class="moon">🌙</span>
-        <div class="toggle-ball"></div>
-    </div>
-    
     <header>
         <div class="container">
-            <div class="logo">NK</div>
+            <div class="logo">PP</div>
             <nav>
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
@@ -33,16 +26,18 @@
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-text">
-                        <h1>Nabin Khatri</h1>
-                        <h2>Full-Stack Developer</h2>
-                        <p>I build exceptional digital experiences with clean, efficient code. Specializing in modern web technologies and frameworks.</p>
+                        <h1>Prajan Parajuli</h1>
+                        <h2>Web Developer</h2>
+                        <p>I create simple and clean websites using HTML and CSS. Currently studying in class 11 at National School of Sciences.</p>
                         <div class="hero-buttons">
                             <a href="projects.html" class="primary-btn">View Projects</a>
                             <a href="contact.html" class="secondary-btn">Contact Me</a>
                         </div>
                     </div>
                     <div class="hero-image">
-                        <div class="circle"></div>
+                        <div class="circle">
+                            <img src="prajan.png" alt="Prajan Parajuli">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -50,39 +45,28 @@
         
         <section class="tech-stack">
             <div class="container">
-                <h2 class="section-title">Tech Stack</h2>
+                <h2 class="section-title">My Skills</h2>
                 <div class="tech-grid">
                     <div class="tech-item">
                         <div class="tech-icon"></div>
-                        <h3>Front-End</h3>
+                        <h3>HTML5</h3>
                         <ul>
-                            <li>React.js</li>
-                            <li>Vue.js</li>
-                            <li>JavaScript (ES6+)</li>
-                            <li>TypeScript</li>
-                            <li>CSS3 / Sass</li>
+                            <li>Semantic HTML</li>
+                            <li>Forms</li>
+                            <li>Tables</li>
+                            <li>Lists</li>
+                            <li>Media Elements</li>
                         </ul>
                     </div>
                     <div class="tech-item">
                         <div class="tech-icon"></div>
-                        <h3>Back-End</h3>
+                        <h3>CSS3</h3>
                         <ul>
-                            <li>Node.js</li>
-                            <li>Express</li>
-                            <li>Django</li>
-                            <li>PHP</li>
-                            <li>GraphQL</li>
-                        </ul>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-icon"></div>
-                        <h3>Database</h3>
-                        <ul>
-                            <li>MongoDB</li>
-                            <li>PostgreSQL</li>
-                            <li>MySQL</li>
-                            <li>Firebase</li>
-                            <li>Redis</li>
+                            <li>Layouts</li>
+                            <li>Responsive Design</li>
+                            <li>Animations</li>
+                            <li>Flexbox</li>
+                            <li>Grid</li>
                         </ul>
                     </div>
                 </div>
@@ -96,12 +80,11 @@
                     <div class="project-card">
                         <div class="project-image"></div>
                         <div class="project-content">
-                            <h3>E-commerce Platform</h3>
-                            <p>A full-featured online store with payment integration, user authentication, and admin dashboard.</p>
+                            <h3>School Website</h3>
+                            <p>A simple website for my school project with information pages and contact form.</p>
                             <div class="project-tags">
-                                <span>React</span>
-                                <span>Node.js</span>
-                                <span>MongoDB</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
                             </div>
                             <a href="#" class="project-link">View Project</a>
                         </div>
@@ -109,12 +92,11 @@
                     <div class="project-card">
                         <div class="project-image"></div>
                         <div class="project-content">
-                            <h3>Healthcare Management System</h3>
-                            <p>A comprehensive system for managing patient records, appointments, and medical staff schedules.</p>
+                            <h3>Personal Blog</h3>
+                            <p>A blog website where I share my learning journey and experiences.</p>
                             <div class="project-tags">
-                                <span>Vue.js</span>
-                                <span>Django</span>
-                                <span>PostgreSQL</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
                             </div>
                             <a href="#" class="project-link">View Project</a>
                         </div>
@@ -131,8 +113,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <div class="logo">NK</div>
-                    <p>Building digital experiences with precision and passion.</p>
+                    <div class="logo">PP</div>
+                    <p>Creating simple and clean websites.</p>
                 </div>
                 <div class="footer-links">
                     <h3>Quick Links</h3>
@@ -146,27 +128,14 @@
                 <div class="footer-social">
                     <h3>Connect</h3>
                     <div class="social-icons">
-                        <a href="#" class="social-icon">GH</a>
-                        <a href="#" class="social-icon">LI</a>
-                        <a href="#" class="social-icon">TW</a>
+                        <a href="https://instagram.com/oragnic_ic" class="social-icon">IG</a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Nabin Khatri. All rights reserved.</p>
+                <p>&copy; 2025 Prajan Parajuli. All rights reserved.</p>
             </div>
         </div>
     </footer>
-    
-    <script>
-        // Simple theme toggle functionality
-        const themeToggle = document.querySelector('.theme-toggle');
-        const body = document.body;
-        
-        themeToggle.addEventListener('click', () => {
-            body.classList.toggle('light-mode');
-            themeToggle.classList.toggle('active');
-        });
-    </script>
 </body>
 </html>
